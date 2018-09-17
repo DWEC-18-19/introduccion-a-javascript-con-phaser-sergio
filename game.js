@@ -15,13 +15,55 @@ var winningScore = 100;
 // add collectable items to the game
 function addItems() {
   items = game.add.physicsGroup();
-  createItem(375, 300, 'coin');
+  createItem(520, 300, 'coin');
+
+  createItem(650, 250, 'coin');
+
+  createItem(580, 150, 'coin');
+
+  createItem(370, 90, 'coin');
+
+  createItem(240, 210, 'coin');
+
+  createItem(100, 280, 'coin');
+
+  createItem(580, 500, 'coin');
+
+  createItem(350, 400, 'coin');
+
+  createItem(220, 480, 'coin');
 }
 
 // add platforms to the game
 function addPlatforms() {
   platforms = game.add.physicsGroup();
-  platforms.create(450, 150, 'platform');
+  platforms.create(100, 550, 'platform');
+  platforms.setAll('body.immovable', true);
+
+  platforms.create(450, 550, 'platform');
+  platforms.setAll('body.immovable', true);
+
+
+  platforms.create(290, 450, 'platform');
+  platforms.setAll('body.immovable', true);
+
+  platforms.create(400, 350, 'platform');
+  platforms.setAll('body.immovable', true);
+ 
+
+  platforms.create(650, 300, 'platform');
+  platforms.setAll('body.immovable', true);
+ 
+  platforms.create(550, 200, 'platform');
+  platforms.setAll('body.immovable', true);
+
+  platforms.create(50, 330, 'platform');
+  platforms.setAll('body.immovable', true);
+
+  platforms.create(150, 270, 'platform');
+  platforms.setAll('body.immovable', true);
+
+  platforms.create(250, 150, 'platform');
   platforms.setAll('body.immovable', true);
 }
 
