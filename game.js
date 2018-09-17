@@ -44,17 +44,17 @@ function addPlatforms() {
   platforms.setAll('body.immovable', true);
 
 
-  platforms.create(290, 450, 'platform');
+  platforms.create(290, 450, 'platform_2');
   platforms.setAll('body.immovable', true);
 
-  platforms.create(400, 350, 'platform');
+  platforms.create(400, 350, 'platform_2');
   platforms.setAll('body.immovable', true);
  
 
   platforms.create(650, 300, 'platform');
   platforms.setAll('body.immovable', true);
  
-  platforms.create(550, 200, 'platform');
+  platforms.create(550, 200, 'platform_2');
   platforms.setAll('body.immovable', true);
 
   platforms.create(50, 330, 'platform');
@@ -64,6 +64,9 @@ function addPlatforms() {
   platforms.setAll('body.immovable', true);
 
   platforms.create(250, 150, 'platform');
+  platforms.setAll('body.immovable', true);
+
+  platforms.create(100, 100, 'platform_2');
   platforms.setAll('body.immovable', true);
 }
 
@@ -107,6 +110,7 @@ window.onload = function () {
     
     //Load images
     game.load.image('platform', 'platform_1.png');
+    game.load.image('platform_2', 'platform_2.png');
     
     //Load spritesheets
     game.load.spritesheet('player', 'chalkers.png', 48, 62);
